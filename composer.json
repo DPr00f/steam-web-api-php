@@ -1,0 +1,14 @@
+{
+	"autoload": {
+		"classmap": [
+			"tests",
+			"SteamApi"
+		]
+	},
+	"require": {
+		"guzzlehttp/guzzle": "5.0.*@dev"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "4.6.*@dev"
+	}
+}
