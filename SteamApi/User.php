@@ -93,6 +93,44 @@ class User extends Client implements IUser {
 		return $friends;
 	}
 
+	public function GetUserGroupList($steamId = null)
+	{
+		// Set up the api details
+		$this->method  = __FUNCTION__;
+		$this->version = 'v0001';
+
+		if ($steamId == null) {
+			$steamId = $this->steamId;
+		}
+
+		// Set up the arguments
+		$arguments = [
+			'steamid' => $steamId
+		];
+
+		// Get the client
+		$client = $this->setUpClient($arguments)->response;
+
+		return $client->groups;
+	}
+
+	public function ResolveVanityUrl($vanityUrl)
+	{
+		// Set up the api details
+		$this->method  = __FUNCTION__;
+		$this->version = 'v0001';
+
+		// Set up the arguments
+		$arguments = [
+			'vanityurl' => $vanityUrl
+		];
+
+		// Get the client
+		$client = $this->setUpClient($arguments)->response;
+
+		return property_exists($client, 'steamid') ? strval($client->steamid) : null;
+	}
+
 	protected function convertToObjects($players, $class = '\SteamApi\Containers\Player')
 	{
 		$cleanedPlayers = array();

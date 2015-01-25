@@ -7,4 +7,8 @@ interface IUser{
 	public function GetPlayerSummaries();
 	
 	public function GetFriendList();
+
+	public function GetUserGroupList();
+
+	public function ResolveVanityURL($vanityUrl);
 }

@@ -56,4 +56,19 @@ class UserTest extends \UnitTestCase {
 		$result = $this->user->GetFriendList();
 		$this->assertGreaterThanOrEqual(20, $result);
 	}
+
+	public function testGetUserGroupList(){
+		$result = $this->user->GetUserGroupList();
+		$this->assertGreaterThanOrEqual(5, count($result));
+	}
+
+	public function testResolveVanityUrl(){
+		$steamId = $this->user->ResolveVanityUrl('pr00fgames');
+		$this->assertEquals($steamId, '76561197963455129');
+	}
+
+	public function testNullResolveVanityUrl(){
+		$steamId = $this->user->ResolveVanityUrl('poaspodopispaodipoasdpoipoidsapoisdpoaipoisda');
+		$this->assertNull($steamId);
+	}
 }
