@@ -12,7 +12,7 @@ class News extends Client implements INews {
 	{
 		// Set up the api details
 		$this->method     = __FUNCTION__;
-		$this->version    = 'v0002';
+		$this->version    = 2;
 
 		// Set up the arguments
 		$arguments = [

@@ -24,7 +24,7 @@ class Stats extends Client implements IStats {
 
 	public function GetGlobalStatsForGame($appId, array $statsName){
 		$this->method  = __FUNCTION__;
-		$this->version = 'v0001';
+		$this->version = 1;
 
 		$count = count($statsName);
 		$arguments = [
@@ -44,7 +44,7 @@ class Stats extends Client implements IStats {
 
 	public function GetNumberOfCurrentPlayers($appId){
 		$this->method  = __FUNCTION__;
-		$this->version = 'v0001';
+		$this->version = 1;
 
 		$arguments = [
 			'appid'   => $appId,
@@ -57,7 +57,7 @@ class Stats extends Client implements IStats {
 
 	public function GetSchemaForGame($appId){
 		$this->method  = __FUNCTION__;
-		$this->version = 'v0002';
+		$this->version = 2;
 
 		$arguments = [
 			'appid'   => $appId,
@@ -71,7 +71,7 @@ class Stats extends Client implements IStats {
 	public function GetPlayerAchievements($appId, $steamId = null)
 	{
 		$this->method  = __FUNCTION__;
-		$this->version = 'v0001';
+		$this->version = 1;
 
 		if(is_null($steamId)){
 			$steamId = $this->steamId;
@@ -93,7 +93,7 @@ class Stats extends Client implements IStats {
 	public function GetGlobalAchievementPercentagesForApp($gameId)
 	{
 		$this->method  = __FUNCTION__;
-		$this->version = 'v0002';
+		$this->version = 2;
 
 		$arguments = [
 			'gameid' => $gameId,
@@ -108,7 +108,7 @@ class Stats extends Client implements IStats {
 	public function GetUserStatsForGame($appId, $steamId = null)
 	{
 		$this->method  = __FUNCTION__;
-		$this->version = 'v0002';
+		$this->version = 2;
 
 		if(is_null($steamId)){
 			$steamId = $this->steamId;

@@ -29,7 +29,7 @@ class Player extends Client implements IPlayer {
 	{
 		// Set up the api details
 		$this->method  = __FUNCTION__;
-		$this->version = 'v0001';
+		$this->version = 1;
 
 		// Set up the arguments
 		$arguments = ['steamId' => $this->steamId];
@@ -46,7 +46,7 @@ class Player extends Client implements IPlayer {
 
 		// Set up the api details
 		$this->method  = 'GetBadges';
-		$this->version = 'v0001';
+		$this->version = 1;
 
 		// Set up the arguments
 		$arguments = ['steamId' => $this->steamId];
@@ -63,7 +63,7 @@ class Player extends Client implements IPlayer {
 	{
 		// Set up the api details
 		$this->method  = __FUNCTION__;
-		$this->version = 'v0001';
+		$this->version = 1;
 
 		// Set up the arguments
 		$arguments = ['steamId' => $this->steamId];
@@ -78,7 +78,7 @@ class Player extends Client implements IPlayer {
 	{
 		// Set up the api details
 		$this->method  = __FUNCTION__;
-		$this->version = 'v0001';
+		$this->version = 1;
 
 		// Set up the arguments
 		$arguments   = ['steamId' => $this->steamId];
@@ -95,7 +95,7 @@ class Player extends Client implements IPlayer {
 	{
 		// Set up the api details
 		$this->method  = __FUNCTION__;
-		$this->version = 'v0001';
+		$this->version = 1;
 
 		// Set up the arguments
 		$arguments                                                           = ['steamId' => $this->steamId];
@@ -117,7 +117,7 @@ class Player extends Client implements IPlayer {
 	{
 		// Set up the api details
 		$this->method  = __FUNCTION__;
-		$this->version = 'v0001';
+		$this->version = 1;
 
 		// Set up the arguments
 		$arguments                                = ['steamId' => $this->steamId];
@@ -141,7 +141,7 @@ class Player extends Client implements IPlayer {
 	{
 		// Set up the api details
 		$this->method  = __FUNCTION__;
-		$this->version = 'v0001';
+		$this->version = 1;
 
 		// Set up the arguments
 		$arguments = [

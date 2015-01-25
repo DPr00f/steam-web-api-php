@@ -23,7 +23,7 @@ class User extends Client implements IUser {
 
 	public function GetPlayerBans($steamId = null){
 		$this->method  = __FUNCTION__;
-		$this->version = 'v1';
+		$this->version = 1;
 
 		if ($steamId == null) {
 			$steamId = $this->steamId;
@@ -46,7 +46,7 @@ class User extends Client implements IUser {
 	{
 		// Set up the api details
 		$this->method  = __FUNCTION__;
-		$this->version = 'v0002';
+		$this->version = 2;
 
 		if ($steamId == null) {
 			$steamId = $this->steamId;
@@ -70,7 +70,7 @@ class User extends Client implements IUser {
 	{
 		// Set up the api details
 		$this->method  = __FUNCTION__;
-		$this->version = 'v0001';
+		$this->version = 1;
 
 		// Set up the arguments
 		$arguments = [
@@ -97,7 +97,7 @@ class User extends Client implements IUser {
 	{
 		// Set up the api details
 		$this->method  = __FUNCTION__;
-		$this->version = 'v0001';
+		$this->version = 1;
 
 		if ($steamId == null) {
 			$steamId = $this->steamId;
@@ -118,7 +118,7 @@ class User extends Client implements IUser {
 	{
 		// Set up the api details
 		$this->method  = __FUNCTION__;
-		$this->version = 'v0001';
+		$this->version = 1;
 
 		// Set up the arguments
 		$arguments = [

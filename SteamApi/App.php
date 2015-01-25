@@ -37,7 +37,7 @@ class App extends Client implements IApp {
 		$this->url        = "http://api.steampowered.com/";
 		$this->interface  = 'ISteamApps';
 		$this->method     = __FUNCTION__;
-		$this->version    = 'v0002';
+		$this->version    = 2;
 
 		$client = $this->setUpClient();
 
@@ -49,7 +49,7 @@ class App extends Client implements IApp {
 		$this->url        = "http://api.steampowered.com/";
 		$this->interface  = 'ISteamApps';
 		$this->method     = __FUNCTION__;
-		$this->version    = 'v0001';
+		$this->version    = 1;
 
 		$arguments = [
 			'addr' => $addressOrIp
@@ -64,7 +64,7 @@ class App extends Client implements IApp {
 		$this->url        = "http://api.steampowered.com/";
 		$this->interface  = 'ISteamApps';
 		$this->method     = __FUNCTION__;
-		$this->version    = 'v0001';
+		$this->version    = 1;
 
 		$arguments = [
 			'appid' => $appId,

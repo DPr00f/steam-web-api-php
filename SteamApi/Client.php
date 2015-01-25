@@ -12,7 +12,7 @@ class Client {
 	protected $url = "http://api.steampowered.com/";
 	protected $interface;
 	protected $method;
-	protected $version      = 'v0002';
+	protected $version      = 2;
 	protected $apiKey;
 	protected $apiFormat    = 'json';
 	protected $steamId;
@@ -44,7 +44,7 @@ class Client {
 		} 
 
 		if ($version) {
-			return $url . $this->version . '/';
+			return $url . 'v'. $this->version . '/';
 		}
 
 		return $url;
