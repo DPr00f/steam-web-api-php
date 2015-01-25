@@ -2,8 +2,9 @@
 namespace SteamApi;
 
 use SteamApi\Client;
+use SteamApi\Interfaces\INews;
 
-class News extends Client {
+class News extends Client implements INews {
 
 	protected $interface = 'ISteamNews';
 
