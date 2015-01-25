@@ -1,4 +1,15 @@
 {
+	"name": "jocolopes/steamapi",
+	"description": "Steam Web Api Generic Integration",
+	"type": "library",
+	"keywords": ["library","steam","steamapi","jocolopes","webapi", "steamwebapi"],
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Joao Lopes",
+			"email": "jocolopes@gmail.com"
+		}
+	],
 	"autoload": {
 		"classmap": [
 			"tests",
